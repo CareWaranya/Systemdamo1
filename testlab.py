@@ -21,7 +21,7 @@ class BlockChain:
         self.timestamp = str(datetime.datetime.now())
 
     def hashblock(self):
-        newNonce = random.randint(1, 1000000000000)
+        newNonce = random.randint(1, 100000000000000000)
         hashtext = str(self.blockNo) + str(newNonce) + str(self.transaction) + str(self.previous_hash) + self.timestamp
         blockhash = sha256(hashtext.encode()).hexdigest()
 
