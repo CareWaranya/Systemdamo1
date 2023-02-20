@@ -16,3 +16,5 @@ for c in message:
 
 print("Plain text:", message)
 print("Cipher text:", encrypted_message)
+
+print("-------------------------------------**************************")
